@@ -22,7 +22,8 @@ SOFTWARE.
 */
 var main = function() {
   $("#top-text").keyup(function () {
-    
+    var top = $("#top-text").val();
+    $(".top-caption").text(top);
   });
 };
 
