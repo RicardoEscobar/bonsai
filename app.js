@@ -30,7 +30,11 @@ var main = function() {
     var bottom = $("#bottom-text").val();
     $(".bottom-caption").text(bottom);
   });
-  
+
+  $("#image-url").keyup(function () {
+    var src = $("#image-url").val();
+    $("div[class='meme thumbnail'] > img").attr("src", src);
+  });
 };
 
 $(document).ready(main);
