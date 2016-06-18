@@ -25,6 +25,12 @@ var main = function() {
     var top = $("#top-text").val();
     $(".top-caption").text(top);
   });
+
+  $("#bottom-text").keyup(function () {
+    var bottom = $("#bottom-text").val();
+    $(".bottom-caption").text(bottom);
+  });
+  
 };
 
 $(document).ready(main);
